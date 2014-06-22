@@ -29,7 +29,7 @@ X1 <- rbind(X_train, X_test)
 # Read feature data
 features <- read.table("UCI HAR Dataset/features.txt", stringsAsFactors=FALSE)
 
-# 
+# Name colnames
 colnames(X1) <- c(features$V2,"activity","subject")
 
 # Extract mean() and std()
@@ -49,9 +49,6 @@ levels(X3$activity) <- act_labels$V2
 # Modify variable names
 names(X3) <- gsub("\\(\\)", "", names(X3))
 names(X3) <- gsub("-", "_", names(X3))
-
-# 5. Creates a second, independent tidy data set 
-# with the average of each variable for each activity and each subject. 
 
 # Melt data frame with subject id and activity id
 library(reshape2)
