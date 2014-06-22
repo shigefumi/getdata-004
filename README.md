@@ -17,7 +17,7 @@ This is the R script for Getting and Cleaning Data Course Project on Coursera.
 1. Run this script.
 1. You will get tidy_df.txt file. 
 
-## How this work.
+## How this works.
 
 * Read train data
   * Training set data from X_train.txt
